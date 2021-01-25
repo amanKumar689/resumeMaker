@@ -6,6 +6,7 @@ const fs = require('fs');
 const handlebars = require('handlebars');
 const port = process.env.PORT || 8000; 
 
+app.use(express.static('public'));
 
 app.use(express.urlencoded({
     extended: true
@@ -443,11 +444,5 @@ app.use('/templateid6', (req, res)=>{
 
     });
 });
-app.use('/detail.html', (req, res)=>{
 
-  res.sendFile(__dirname + '\\public\\detail.html')
-console.log(req.query.id);
-
-})
-app.use(express.static('public'));
 app.listen(port);
