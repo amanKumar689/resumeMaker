@@ -25,15 +25,6 @@ app.use(pdf);
 app.use('/templateid1', function(req, res) {
 
 
-        
-// var html = fs.readFileSync('1st.html', 'utf8');
-// var options = { format:"A4" };
-// pdf.create(html, options).toFile('./businesscard.pdf', function(err, res_) {
-//     if (err) return console.log(err);
-//      res.sendFile(__dirname + '/businesscard.pdf');
-//     console.log(res_); // { filename: '/app/businesscard.pdf' }
-//   });
-  
 
     var newString = fs.readFileSync('1st.html', 'utf-8');
     var exp_index = 2;
