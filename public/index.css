@@ -121,13 +121,14 @@
             
             .feature .col-md-4 h5 {
                 line-height: 2;
-                font-family: ;
-                color: #DBDBDB
+                color: #DBDBDB;
+                margin-left:6px;
             }
             
             .feature .col-md-4 p {
-                font-family: Book Antiqua;
+                font-family:Consolas;
                 color: #E2DEDE;
+                padding:18px;
             }
             
             .img_box {
