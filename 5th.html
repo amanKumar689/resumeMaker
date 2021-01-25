@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            word-break: break-all;
+        }
+        
+        body {
+        }
+        
+        .container {
+            position: relative;
+            max-height: calc(1122px - 199px);
+        }
+        
+        h1 {
+            border-bottom: 4px solid rgb(177, 177, 177);
+            height: 150px;
+            padding: 50px 80px 80px 80px;
+            font-family: High Tower Text;
+            letter-spacing: 10px;
+            font-size: 35px;
+            margin-bottom: 50px;
+                 }
+        
+        .first {
+            float: left;
+            width: 464px;
+              max-height: 925px;
+        }
+        
+        nav {
+            background-color: black;
+            color: white;
+            font-size: 12px;
+            padding: 20px 0px 0px 10px;
+            margin-bottom: 40px;
+            display: block;
+        }
+        
+        nav span {  
+            word-break: break-all;
+            display: inline-block;
+            margin-right:30px ;
+            width:180px;
+            margin-bottom:15px;
+        }
+        
+        h2 {
+            margin: 0px 0px 0px 20px;
+            letter-spacing: 5px;
+        }
+        
+        .tab {
+            padding: 20px 20px 0px 20px;
+        }
+        
+        .second {
+            padding: 10px 20px 20px 20px;
+            background-color: rgba(209, 209, 209, 0.61);
+            width: 326px;
+            height: 922px;
+            color: rgb(77, 77, 77);
+            float: right;
+        }
+        
+        .second h2 {
+            margin: 40px 0px 20px 50px;
+        }
+        
+        .tab_2 {
+            line-height: 2.1;
+            margin-left: 20px;
+            margin-bottom:10px;
+        }
+        
+        .education {
+            min-height: 300px;
+        }
+        
+        li {
+            padding: 10px;
+            margin-left: 50px;
+        }
+        
+        p {
+            font-family: Lucida Fax;
+        }
+        
+        nav span {
+            font-family: Lucida Fax;
+            line-height: 2;
+        }
+        
+        .tab p {
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> AMAN KUMAR </h1>
+    <div class="container">
+
+        <section class="first">
+            <nav> <span style="letter-spacing: 2px;"> Phone : <br/> {{mobile}} </span> <span > Email :<br/> {{email}}</span> <span>Address :<br/>{{address}}</span> </nav>
+
+            <h2>PROFILE</h2> <br/>
+            <p style="margin:10px 10px 20px 20px;font-size: 14px;"> 
+             {{about}}
+            </p> <br/>
+            <h2>EXPERIENCE</h2> <br/>
+            <div class="tab" >
+                <h6 style="font-size:15px;letter-spacing:3px;line-height:1.6"> {{jobtitle1}}  </h6> <span style="font-size: 12px;">{{start1}} - {{end1}} </span> <br/> <span> {{company1}}</span> <br/> <br/>
+                <p style="font-size: 14px;">
+                 {{jobdescription1}}</p></div>
+
+         
+
+        </section>
+
+
+        <section class="second">
+            <div class="education">
+
+                <h2> EDUCATION</h2> <br/>
+
+                <div class="tab_2" style="font-size: 13px;">
+                    <p> {{graduationmonth1}} - {{graduationyear1}} </p>
+                    <p> {{degree1}}</p>
+                    <p>{{schoolname1}}</p></div>
+            </div>
+
+            <h2>SKILLS </h2>
+            <br/>
+            <ul>
+                <li>{{skill1}}</li>
+             
+            </ul>
+        </section>
+
+
+    </div>
+</body>
+
+</html>

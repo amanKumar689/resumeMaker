@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            max-height:1122px;
+        }
+        h1 {
+            height: 200px;
+            padding: 30px 0px 20px 30px;
+            border-bottom: 3px solid darkgray;
+            margin: 0px 0px 0px 0px;
+        font-family:Copperplate Gothic;
+        letter-spacing: 5px;
+         
+         }
+        
+        h1 p span {
+            font-size: 15px;
+            ;
+        }
+        
+        section:nth-of-type(1) {
+            min-height: 290px;
+            padding: 20px;
+        }
+
+        section:nth-of-type(2)
+        {
+            min-height: 250px;
+            padding:0px 30px 0px 30px;
+        }
+        section:nth-of-type(3)
+        {
+            min-height: 290px;
+            padding:30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1> {{name}} <br/><br/>
+            <p> &nbsp;&nbsp;&nbsp;
+                <span style="font-size:12px ;font-family:Lucida Sans;letter-spacing: 5px;">Phone :  {{mobile}} </span> <br/>
+                <span style="font-size:12px;font-family:Lucida Sans;letter-spacing: 5px;">Email : {{email}}</span>
+                
+            </p>
+        </h1>
+        <section>
+            <h2 style="margin-bottom:20px;font-family: Lucida Fax;letter-spacing: 3px;"> EXPERIENCE</h2>
+           
+            <div class="tab" style="margin-bottom:20px;position: relative;">
+
+                <span>{{start1}} - {{end1}}<br/><span style="line-height: 2;"> {{company1}}</span> </span>
+                <span style="font-size: 13px;position: absolute;top:0px;margin-left:100px;">
+                    {{jobdescription1}}</span></div>
+
+         
+
+        </section>
+        <section>
+
+            <h2 style="font-family: Lucida Fax;letter-spacing: 3px;border-top:2px solid gray;padding-top:40px"> EDUCATION</h2> <br/>
+
+            <div class="tab_2" style="margin-bottom:20px">
+               <p style="display: inline-block;">{{graduationmonth1}} - {{graduationyear1}} 
+                <span style="line-height: 2;margin-left:180px;">{{degree1}}</span>
+            </p>
+               <br/>  <span style="line-height: 2;">{{schoolname1}}</span></div>
+
+
+        </section>
+        <section>
+
+            <h2 style="font-family: Lucida Fax;letter-spacing: 3px;border-top:2px solid gray;padding-top:10px">
+                MY SKILL</h2><br/>
+            <div class="skill">
+
+                <span style="line-height:2;font-family:Lucida fax ;font-weight: bolder;letter-spacing: 4px;">
+                     {{skill1}}</span><br/>
+                    </div>
+          
+
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            word-break: break-all;
+        }
+        
+        body {
+            max-height: 1000px;
+            overflow:hidden
+        }
+        
+        h1 {
+            height: 200px;
+            background-color: #dea65d;
+            padding: 70px 30px 50px 50px;
+            letter-spacing: 10px;
+            color: white;
+            font-family: Perpetua Titling MT;
+        }
+        
+        .container {
+            position: relative;
+        }
+        
+        .first {
+            width: 450px;
+            float: left;
+            height: 918px;
+        }
+        
+        .second {
+            float: right;
+            width: 330px;
+            height: 920px;
+            padding: 40px 40px 20px 40px;
+            color: white;
+            background-color: #394e52;
+        }
+        
+        .experience {
+            min-height: 400px;
+            padding: 20px 20px 20px 20px;
+            position: relative;
+        }
+        
+        .education {
+            padding: 20px 20px 20px 20px;
+        }
+        
+        h2 {
+            border: 2px solid gray;
+            width: 60%;
+            text-align: center;
+            padding: 5px;
+            margin: 20px 0px 20px 0px;
+        }
+        
+        li {
+            margin-bottom: 20px;
+        }
+        
+        .tab,
+        .tab_2 {
+            position: relative;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>{{name}}</h1>
+    <div class="container">
+        <section class="first">
+            <div class="experience">
+                <h2>EXPERIENCE</h2> <br/>
+
+
+
+                <div class="tab">
+                    <span style="line-height:1.5;margin-right:60px;float: left">  {{start1}} - {{end1}} </span>
+                    <p style="padding-left: 100px;">
+                        <span style="line-height:1.5;font-size: 14px;font-weight: bold;margin-left:20px"> 
+                            {{jobtitle1}} </span> <br/>
+                        <span style="font-size: 14px;line-height: 1.9;margin-left:20px;">    {{company1}}  </span> </p></br/>
+                        <span style="line-height:1.5;font-size:14px;margin-left:10px;top:60px;font-family: Georgia, 'Times New Roman', Times, serif;"> 
+                        {{jobdescription1}}</span></div>
+
+
+
+            </div>
+
+            <div class="education" style="">
+                <h2>EDUCATION</h2> <br/>
+
+                <div class="tab_2">
+                    <span style="line-height:2">  {{graduationmonth1}} - {{graduationyear1}} </span>
+                    <span style="line-height:1.5;letter-spacing:3px;float:right"> 
+                         {{degree1}} </span> <br/>
+                    <span style="font-weight: bold;max-width:200px;display: inline-block;">{{schoolname1}}</span><br/></div>
+                          
+                
+            </div>
+        </section>
+        <section class="second">
+            <h2>ABOUT ME </h2><br/>
+            <p style="line-height: 1.5;font-size: 14px;">
+
+               {{about}}
+                
+                </p> <br/>
+            <h2>CONTACT</h2> <br/> <br/>
+            <p style="line-height: 2.2;"> Address :{{address}}</p>
+            <p style="line-height: 2.2;"> Mobile : {{mobile}}</p>
+            <p style="line-height: 2.2;"> Email : {{email}} </p> <br/><br/>
+            <h2>SKILLS</h2><br/><br/>
+            <li>{{skill1}}</li>
+            
+        </section>
+
+    </div>
+
+</body>
+
+</html>

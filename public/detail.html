@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+
+<body style="background-color: #4B4B4B;">
+    <div class="container-fluid" style="margin-top:40px !important;">
+
+        <div class="detail">
+            <section class="detail_area">
+
+
+                <!-- ..................FORM_1st........................ -->
+                <form method="POST" id="form">
+
+                    <div class="form">
+                        <h1>About Me</h1>
+                        <div class="about_me" id="about_me">
+                            <div class="textarea">
+                                <h6>Describe about yourself</h6>
+                                <textarea name="about" id="textarea" placeholder="describe yourself in atleast 100 words"></textarea>
+                            </div>
+
+                            <div class="btnbox">
+                                <button class="btn next" type="button" id="about_me_btn">NEXT</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ..................FORM_1st END........................ -->
+
+
+
+
+
+                    <!-- ...................................CONTACT........................-->
+                    <div class="form">
+                        <h1>Contact</h1>
+                        <div class="contact_area" id="contact">
+                            <div class="input">
+                                <input type="text" id="name" name="name">
+
+                            </div>
+                            <div class="input">
+
+                                <input type="text" id="address" name="address">
+                            </div>
+                            <div class="input">
+
+                                <input type="text" id="mobile" name="mobile">
+                            </div>
+                            <div class="input">
+
+                                <input type="text" id="email" name="email">
+                            </div>
+
+                        </div>
+                        <div class="navbtn">
+                            <button type="button" class="btn backbtn" type="">BACK</button>
+                            <button class="btn next" type="button">NEXT</button>
+                        </div>
+                    </div>
+                    <!-- ...................................CONTACT  END........................-->
+
+
+
+
+
+                    <!-- .........................SKILL...................-->
+                    <div class="form">
+                        <h1>Skill</h1>
+                        <div class="skill" id="skill">
+                            <div class="input" id="1">
+                                <p>1.</p>
+                                <input type="text" name="skill1">
+                            </div>
+                            <div class="input" id="2">
+                                <p>2.</p>
+                                <input type="text" name="skill2">
+                            </div>
+                            <div class="btnbox">
+                                <button class="btn" type="button" id="add">ADD MORE SKILL</button>
+                            </div>
+                        </div>
+                        <div class="navbtn">
+                            <button type="button" class="btn backbtn">BACK</button>
+                            <button class="btn next" type="button">NEXT</button>
+                        </div>
+                    </div>
+                    <!-- ........................SKILL END.......................... -->
+
+
+
+
+
+                    <!-- .......................EDUCATION.......................... -->
+                    <div class="form">
+                        <h1>Education</h1>
+                        <div class="accordion my-5" id="accordionExample1">
+                            <div class="card-header eduheader" id="headingOne" style="display: none;">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link accordionedubtn" type="button" data-toggle="collapse" data-target="#collapseone1" aria-expanded="true" aria-controls="collapseone1" style="color:white">
+                                Here Qualification Name 
+                                
+                            </button>
+
+                                </h5>
+                            </div>
+
+                            <div id="collapseone1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample1">
+
+                                <div class="education_area" id="education">
+
+                                    <div class="swipe_up" id=swipe_up1>
+                                        <div class="input">
+                                            <input type="text" name="schoolname1"></div>
+                                        
+                                        <div class="input">
+                                            <input type="text" name="degree1" class="degree"></div>
+
+                                        <div class="input">
+                                            <p style="color:white;font-family:Lucida Fax ;">Graduation date</p>
+                                            <select name="graduationmonth1"> 
+               <option value="JAN">JAN</option>
+               <option value="FEB">FEB</option>
+               <option value="MAR">MAR</option>
+               <option value="APR">APR</option>
+               <option value="APR">MAY</option>
+               <option value="APR">JUN</option>
+               <option value="APR">JUL</option>
+               <option value="APR">AUG</option>
+               <option value="APR">SEP</option>
+               <option value="APR">OCT</option>
+               <option value="APR">NOV</option>
+               <option value="APR">DEC</option>
+               
+           </select>
+                                            <select name="graduationyear1" class="yearselect"> 
+               <option value="2001">2001</option>
+               <option value="2002">2002</option>
+               <option value="2003">2003</option>
+               <option value="2004">2004</option>
+               <option value="2005">2005</option>
+               
+           </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btnbox">
+                                <button class="btn" type="button" id="add2">ADD MORE </button>
+                            </div>
+                        </div>
+                        <div class="navbtn">
+                            <button type="button" class="btn backbtn">BACK</button>
+                            <button class="btn next" type="button">NEXT</button>
+                        </div>
+                    </div>
+                    <!-- .......................EDUCATION END.......................... -->
+
+
+
+
+                    <!-- /* ............................EXPERIENCE_AREA........................ */ -->
+                    <div class="form">
+                        <h1>Experience</h1>
+                        <div class="accordion my-5" id="accordionExample2">
+                            <div class="card-header expheader" id="headingOne" style="display:none">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link accordionexpbtn" type="button" data-toggle="collapse" data-target="#collapsetwo1" aria-expanded="true" aria-controls="collapsetwo1" style="color:white">
+                                Here Qualification Name
+                            </button>
+
+                                </h5>
+                            </div>
+
+                            <div id="collapsetwo1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample2">
+
+
+                                <div class="experience_area" id="experience">
+                                    <div class="swipe_up_2" id="swipe_up_2(1)">
+                                        <div class="input">
+                                            <input type="text" name="jobtitle1" class="jobtitle"></div>
+                                        <div class="input">
+                                            <input type="text" name="company1"></div>
+                                        <div class="input">
+                                            <input type="text" name="jobdescription1"></div>
+                                        <div class="input">
+                                            <p style="color:white;font-family:Lucida Fax ;">Working year</p>
+                                            <input type="month" name="start1" value="1999-11">
+                                            <input type="month" name="end1" value="1999-11">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btnbox">
+                                <button class="btn" type="button" id="add3">ADD MORE </button>
+                            </div>
+                        </div>
+
+                        <div class="navbtn">
+                            <button type="button" class="btn backbtn">BACK</button>
+                            <button class="btn next" type="submit">NEXT</button>
+                        </div>
+                    </div>
+
+
+                </form>
+            </section>
+
+            <!-- /* ............................EXPERIENCE_AREA END........................ */ -->
+        </div>
+
+
+    </div>
+    </div>
+    <div class="side_bar_2">
+        <i class="fas fa-bars menu "></i>
+        <div class="back" id="back">
+            <img src="./Polygon 2.svg" alt="">
+            <span><a href="./show_more.html" style="color:white;text-decoration: none;"> Back</a></span>
+        </div>
+        <ul id="menu_ul">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./index.html#contact">CONTACT US</a></li>
+            <li><a href="./index.html#about">ABOUT</a></li>
+        </ul>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./script_3.js"></script>
+
+</body>
+
+</html>

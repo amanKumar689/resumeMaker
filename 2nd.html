@@ -1,0 +1,129 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+ *{
+     padding:0px;
+     margin:0px;
+     box-sizing: border-box;
+ }
+ .container{
+     border:5px solid rgb(209, 209, 209);
+     overflow:hidden;
+     max-height:1122px;
+ }
+ .container h1{
+     position: relative;
+     padding:40px 0px 28px 50px;
+     border-bottom:4px solid  rgb(209, 209, 209);
+         font-weight: normal;
+     letter-spacing: 20px;
+     font-family:Copperplate Gothic;
+     line-height:1.5;
+ }
+ .left{
+     width:250px;
+     float: left;
+     padding:10px 0px 0px 20px;
+ }
+ .right{ 
+     width:533px;
+     float:right;
+     border-left:4px solid  rgb(209, 209, 209);
+
+ }
+ h3{
+     margin:30px 20px 20px 0px;
+     font-family:Georgia;
+ }
+
+ .left h3:nth-of-type(1)
+ {
+     border-bottom:2px solid gray;
+     border-top:2px solid gray;
+ }
+ .left h3:nth-of-type(2)
+ {
+    border-bottom:2px solid gray;
+     border-top:2px solid gray;
+ }
+ .left h3:nth-of-type(3)
+ {
+    border-bottom:2px solid gray;
+     border-top:2px solid gray;
+ }
+ 
+ h6{
+     line-height:2.9;
+     font-size:15px ;letter-spacing:2px;
+ }
+ .experience {
+     min-height:450px;
+     padding:10px 0px 0px 13px;
+     border-bottom:2px solid rgb(209, 209, 209);
+ }
+ .education {
+     min-height:450px;
+     padding:10px 0px 0px 13px; 
+ }
+ .tab , .tab_2 {
+     margin-bottom:20px;
+ }
+     </style>
+ </head>
+ <body>
+     <div class="container" >
+         <h1> {{name}} </h1>
+         <section class="left">
+
+            <h3>ABOUT  ME </h3> <br/><p style="font-size: 14px;">
+                {{about}}</p>
+             <h3> CONTACT</h3> 
+       <h6 >Address : </h6><p>{{address}} </p> 
+       <h6>Mobile : </h6><p>{{mobile}}</p>   
+       <h6>Email : </h6><p>{{email}}</p>
+       <h3 style=" margin:30px 20px 30px 0px;"> SKILLS</h3>
+        <p style="margin-bottom:20px">{{skill1}}</p>
+              
+         </section>
+         <section class="right">
+             <div class="experience" >
+    
+
+                 <h3 style="margin: 10px 20px 10px 0px">EXPERIENCE</h3> <br/>
+                 <!-- ................FIRST EXPERIENCE TAB......... -->
+                 <div class="tab" > 
+                     <h5 style="font-size:15px ;letter-spacing: 5px;line-height:2"> {{jobtitle1}}</h5><span style="margin-left:0px;font-size:14px;"> {{start1}} - {{end1}}</span>
+                     <h5 style="margin-top:5px;margin-left:0px"> {{company1}} </h5><br/> <span style="font-size: 13px;">
+                     {{jobdescription1}}</span></div>
+                                          
+
+                </div>
+        <!-- ................FIRST EXPERIENCE TAB  END ..............-->
+
+
+      
+        <div class="education">
+            <h3 style="margin: 10px 20px 0px 0px">EDUCATION</h3> <br/>
+       
+
+            <div class="tab_2" >                 
+                <h5 style="margin-top:5px;display:inline-block"> 
+                     <span style="font-size: 14px;line-height:2.9">
+                   {{graduationmonth1}} - {{graduationyear1}}</span> 
+                    <span style="font-size: 16px;font-weight: lighter;margin-left:180px;letter-spacing: 3px;">{{degree1}} </span>
+                    <br/>
+                     <span style="font-size:15px ;letter-spacing: 3px;display:inline-block;width:220px;"> 
+                        {{schoolname1}}</span></h5></div>
+
+                   
+        
+                                
+                     </div>
+         </section>
+     </div>
+ </body>
+ </html>
