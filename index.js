@@ -18,7 +18,7 @@ app.use(express.urlencoded({
     extended: true
 }))
 
-// app.use(pdf);
+app.use(pdf);
  // or you can app.use(require('express-pdf'));
 
 
