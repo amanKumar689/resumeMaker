@@ -113,6 +113,7 @@ app.use('/templateid1', function(req, res) {
         res.pdfFromHTML({
             filename: 'demo.pdf',
             html: path.resolve(__dirname,'demo.html'),
+            options:{format:"A4",}
            
 
         });
