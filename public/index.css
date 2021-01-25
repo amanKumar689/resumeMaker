@@ -735,9 +735,7 @@
                 .experience_area .swipe_up_2 .input {
                     width: 100vw;
                 }
-                .experience_area .swipe_up_2 .input:nth-of-type(2) {
-                    max-width: 180px;
-                }
+               
             }
             
             .experience_area input {

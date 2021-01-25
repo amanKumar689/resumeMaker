@@ -1,10 +1,16 @@
 const express = require('express')
 const app = express();
 const path = require('path')
-const pdf = require('express-pdf')
+var pdf = require('html-pdf');
 const fs = require('fs');
 const handlebars = require('handlebars');
 const port = process.env.PORT || 8000; 
+
+
+
+
+
+
 
 app.use(express.static('public'));
 
@@ -12,10 +18,22 @@ app.use(express.urlencoded({
     extended: true
 }))
 
-app.use(pdf); // or you can app.use(require('express-pdf'));
+// app.use(pdf);
+ // or you can app.use(require('express-pdf'));
 
 
 app.use('/templateid1', function(req, res) {
+
+
+        
+var html = fs.readFileSync('1st.html', 'utf8');
+var options = { format:"A4" };
+pdf.create(html, options).toFile('./businesscard.pdf', function(err, res_) {
+    if (err) return console.log(err);
+     res.sendFile(__dirname + '/businesscard.pdf');
+    console.log(res_); // { filename: '/app/businesscard.pdf' }
+  });
+  
 
     var newString = fs.readFileSync('1st.html', 'utf-8');
     var exp_index = 2;
@@ -89,11 +107,17 @@ app.use('/templateid1', function(req, res) {
 
     fs.writeFileSync('demo.html',newString);
 
-        res.pdfFromHTML({
-            filename: 'demo.pdf',
-            html: path.resolve(__dirname,'demo.html'),
 
-        });
+
+
+        // res.pdfFromHTML({
+        //     filename: 'demo.pdf',
+        //     html: path.resolve(__dirname,'demo.html'),
+        //     options:{
+        //     height:"100px"
+        // }
+
+        // });
 });
 
 app.use('/templateid2', (req, res)=>{
