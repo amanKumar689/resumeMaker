@@ -74,7 +74,7 @@
                 position: fixed;
                 right: 0px;
                 top: 0px;
-                background-color: rgb(255, 190, 0, 100);
+                background-color:#ffbe00;
                 overflow: hidden;
             }
             
@@ -333,7 +333,7 @@
                 right: 0px;
                 top: 0px;
                 transition: 0.3s ease-in-out;
-                background-color: rgb(255, 190, 0, 100);
+                background-color: #ffbe00;
                 overflow-x: hidden;
             }
             
