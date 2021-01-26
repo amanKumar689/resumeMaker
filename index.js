@@ -459,8 +459,5 @@ app.use('/templateid6', (req, res)=>{
     });
 });
 
-app.use('/sitemap.xml',(req,res)=>{
-res.sendFile(__dirname + '\\sitemap.xml');
-console.log(__dirname + '\\sitemap.xml');
-})
+
 app.listen(port);
